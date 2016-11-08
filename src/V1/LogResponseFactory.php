@@ -43,6 +43,7 @@
 
 namespace GanbaroDigital\ZfeLogging\V1;
 
+use GanbaroDigital\ServiceLogger\V1\ServiceLogger;
 use Interop\Container\ContainerInterface;
 use Zend\Diactoros\Response\SapiEmitter;
 use Zend\Expressive\Emitter\EmitterStack;

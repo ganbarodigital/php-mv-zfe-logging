@@ -44,9 +44,12 @@
 namespace GanbaroDigital\ZfeLogging\V1;
 
 use GanbaroDigital\ServiceLogger\V1\BuildServiceLogger;
+use GanbaroDigital\ServiceLogger\V1\ServiceFormatter;
 use GanbaroDigital\ServiceLogger\V1\ServiceLogger;
 use Interop\Container\ContainerInterface;
 use Monolog\Handler\StreamHandler;
+use Monolog\Processor\IntrospectionProcessor;
+use Monolog\Processor\UidProcessor;
 
 /**
  * ZFE factory for creating our logger
