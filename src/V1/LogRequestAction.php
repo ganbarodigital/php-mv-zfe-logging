@@ -91,7 +91,7 @@ class LogRequestAction
      */
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next = null)
     {
-        $this->logger->log($logLevel, "REQUEST", [
+        $this->logger->log($this->logLevel, "REQUEST", [
             'method' => $request->getMethod(),
             'queryPath' => $request->getRequestTarget(),
             'payload' => (string)$request->getBody()
